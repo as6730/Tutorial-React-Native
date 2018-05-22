@@ -18,7 +18,10 @@ class AlbumList extends Component {
       <AlbumDetail key={album.title} album={album}/>
     });
   }
+
   render() {
+    console.log(this.state);
+
     return (
       <View>
         {this.renderAlbums()}
